@@ -24,7 +24,7 @@ class dbClass{
 		 $ordByT = false;
 		 $ordByPT = false;
 
-		foreach($commit as $keys => $value){
+		foreach($com as $keys => $value){
 			if($keys == "table"){
 				$table = $value;
 				$tableT = true;
@@ -76,12 +76,12 @@ class dbClass{
 		return $Cikti;
 	}
 
-	function rows($commit){
+	function rows($com){
 		 $tableT = false;
 		 $columnT = false;
 		 $whereT = false;
 
-		foreach($commit as $keys => $value){
+		foreach($com as $keys => $value){
 			if($keys == "table"){
 				$table = $value;
 				$tableT = true;
